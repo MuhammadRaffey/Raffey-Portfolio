@@ -1,4 +1,5 @@
 "use client";
+import { ReactLenis } from "@studio-freight/react-lenis";
 import React, { useState } from "react";
 import { useEffectOnce, useEventListener } from "usehooks-ts";
 
@@ -54,17 +55,19 @@ export default function Home() {
   return (
     <>
       <PreLoader />
-      <Blur />
-      <Color />
-      <NavBar />
-      <main className="flex flex-col items-center justify-center bg-black">
-        <Hero />
-        <About />
-        <Work />
-        <Tools />
-        <Contact />
-        <Footer />
-      </main>
+      <ReactLenis root>
+        <Blur />
+        <Color />
+        <NavBar />
+        <main className="flex flex-col items-center justify-center bg-black">
+          <Hero />
+          <About />
+          <Work />
+          <Tools />
+          <Contact />
+          <Footer />
+        </main>
+      </ReactLenis>
     </>
   );
 }
