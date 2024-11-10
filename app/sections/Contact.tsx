@@ -54,6 +54,8 @@ const Contact = () => {
               <AnimatedTitle
                 text="GITHUB"
                 className="transition duration-300 hover:text-[#ffffff]"
+                wordSpace="mr-[0.25em]" // Set appropriate spacing here
+                charSpace="mr-[0.01em]" // Set appropriate spacing here
               />
             </Link>
             <Link
@@ -64,6 +66,8 @@ const Contact = () => {
               <AnimatedTitle
                 text="LINKEDIN"
                 className="transition duration-300 hover:text-[#ffffff]"
+                wordSpace="mr-[0.25em]" // Set appropriate spacing here
+                charSpace="mr-[0.01em]" // Set appropriate spacing here
               />
             </Link>
           </div>
