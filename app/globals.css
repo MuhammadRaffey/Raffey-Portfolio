@@ -47,6 +47,7 @@
 html,
 body {
   overscroll-behavior: none;
+  scrollbar-width: none;
 }
 
 body {
