@@ -1,13 +1,11 @@
 // @ts-check
 
 const isProduction = process.env.NODE_ENV === "production";
-const outputDir = process.env.BRANCH === "dev" ? "dev" : "out";
+const outputDir = process.env.BRANCH === "dev" ? "dev" : ".next";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enable static export
   distDir: outputDir,
-  basePath: '/Raffey-Portfolio', // Set to your GitHub Pages repo name
   compiler: {
     reactRemoveProperties: isProduction,
     removeConsole: isProduction,
@@ -29,7 +27,6 @@ const nextConfig = {
   productionBrowserSourceMaps: isProduction,
   swcMinify: !isProduction,
   images: {
-    unoptimized: true, // Disable image optimization for static export
     domains: ["raw.githubusercontent.com"],
   },
 };
