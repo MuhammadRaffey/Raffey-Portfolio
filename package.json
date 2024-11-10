@@ -1,15 +1,14 @@
 {
   "name": "portfolio-site",
   "version": "1.0.0",
-  "private": true,
+  "source": "app/layout.tsx",
+  "homepage": "https://muhammadraffey.github.io/Raffey-Portfolio",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "lint": "next lint",
-    "lint:fix": "eslint --fix --ext ts,tsx app/ && prettier --write app/",
-    "type-check": "tsc"
+    "start": "parcel",
+    "build": "parcel build",
+    "build-gh": "parcel build --public-url 'https://muhammadraffey.github.io/Raffey-Portfolio'",
+    "predeploy": "npm run build-gh",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -22,12 +21,14 @@
     "@react-three/rapier": "^1.4.0",
     "@tailwindcss/line-clamp": "^0.4.2",
     "framer-motion": "^10.6.1",
+    "gh-pages": "^6.2.0",
     "gsap": "^3.11.5",
     "kinet": "^2.2.1",
     "leva": "^0.9.35",
     "lodash": "^4.17.21",
     "meshline": "^3.3.1",
     "next": "^13.4.12",
+    "parcel": "^2.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
