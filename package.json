@@ -1,13 +1,12 @@
 {
   "name": "portfolio-site",
   "version": "1.0.0",
-  "homepage": "https://muhammadraffey.github.io/Raffey-Portfolio",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export",
-    "predeploy": "npm run export",
-    "deploy": "gh-pages -d out"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
