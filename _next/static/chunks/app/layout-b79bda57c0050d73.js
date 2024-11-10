@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[185],{4504:function(e,n,t){Promise.resolve().then(t.t.bind(t,3177,23)),Promise.resolve().then(t.t.bind(t,1142,23))},3177:function(){},1142:function(e){e.exports={style:{fontFamily:"'__Inter_cace58', '__Inter_Fallback_cace58'",fontStyle:"normal"},className:"__className_cace58"}}},function(e){e.O(0,[971,596,744],(function(){return n=4504,e(e.s=n);var n}));var n=e.O();_N_E=n}]);
+//# sourceMappingURL=layout-b79bda57c0050d73.js.map
