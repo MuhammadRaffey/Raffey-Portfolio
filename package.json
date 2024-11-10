@@ -1,14 +1,12 @@
 {
   "name": "portfolio-site",
   "version": "1.0.0",
-  "source": "app/layout.tsx",
   "homepage": "https://muhammadraffey.github.io/Raffey-Portfolio",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://muhammadraffey.github.io/Raffey-Portfolio'",
-    "predeploy": "npm run build-gh",
-    "deploy": "gh-pages -d dist"
+    "build": "next build",
+    "export": "next build && next export",
+    "predeploy": "npm run export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
