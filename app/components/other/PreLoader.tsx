@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import Logo from "../svg/Logo";
 
 const PreLoader: React.FC = () => {
   useEffect(() => {
@@ -95,12 +94,12 @@ const PreLoader: React.FC = () => {
           height: "60px",
         }}
       >
-        <span>Web Developer</span>
+        <span className="text-blue-600">Web Developer</span>
         <span> / </span>
 
-        <span className="flex items-center justify-center gap-3">
+        <span className="flex items-center justify-center gap-3 text-red-500 ">
           {" "}
-          Generative AI Engineer
+          Agentic AI Engineer
         </span>
         <div className="sub hidden"></div>
       </div>
