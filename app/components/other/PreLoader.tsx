@@ -94,12 +94,12 @@ const PreLoader: React.FC = () => {
           height: "60px",
         }}
       >
-        <span className="text-blue-600">Web Developer</span>
+        <span className="text-blue-600">💻 Web Developer 🌐</span>
         <span> / </span>
 
         <span className="flex items-center justify-center gap-3 text-red-500 ">
           {" "}
-          Agentic AI Engineer
+          🚀 Agentic AI Engineer 🤖
         </span>
         <div className="sub hidden"></div>
       </div>

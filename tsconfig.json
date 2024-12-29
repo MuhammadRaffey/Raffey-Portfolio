@@ -6,10 +6,8 @@
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
     "isolatedModules": true,
-    "lib": [
-      "esnext"
-    ],
-    "module": "esnext",
+    "lib": ["esnext"],
+    "module": "NodeNext",
     "moduleDetection": "force",
     "moduleResolution": "nodenext",
     "noEmit": true,
@@ -17,9 +15,7 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "types": [
-      "bun-types"
-    ],
+    "types": ["bun-types"],
     "jsx": "preserve",
     "plugins": [
       {
@@ -37,7 +33,5 @@
     "dev/types/**/*.ts",
     "out/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
